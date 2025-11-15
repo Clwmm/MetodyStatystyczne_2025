@@ -1,0 +1,83 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.junit/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MyPy / Pylint / Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+pylint-report.txt
+pylint-output.txt
+
+# Logs
+*.log
+
+# -------------------------
+# PyCharm / JetBrains
+# -------------------------
+.idea/
+# Only keep project-level code style if needed
+# .idea/codeStyles/
+
+# -------------------------
+# OS files
+# -------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -------------------------
+# Environments / secrets
+# -------------------------
+.env
+.env.*
+*.env
+*.ini
+*.cfg
+*.toml
+!.pre-commit-config.yaml
+
