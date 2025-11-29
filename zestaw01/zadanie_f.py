@@ -8,7 +8,7 @@ def histogram_normalizowany(tablica, n):
     tablica = np.array(tablica)
 
     # tworzymy 10 równych pojemników między min a max
-    bins = np.linspace(tablica.min(), tablica.max(), 11)
+    bins = np.linspace(tablica.min()-1, tablica.max()+1, 11)
 
     # przypisanie wartości do pojemników
     pojemniki = pd.cut(tablica, bins=bins)
@@ -82,7 +82,7 @@ def game_a(a: int, b: int, p_a: float, max_steps: int):
 
     return a
 
-NUMBER_OF_GAMES = 1000000
+NUMBER_OF_GAMES = 10000
 graph = []
 graph_a = []
 
@@ -96,15 +96,12 @@ if __name__ == "__main__":
 
         for _ in range(NUMBER_OF_GAMES):
             k_a = game_a(a, b, p_a, n)
+            if k_a != a:
+                print(k_a)
             graph.append(k_a)
 
         histogram_normalizowany(graph, str(n))
         graph.clear()
-
-    # for pair in graph:
-    #     graph_a.append((pair[0], r_i_equals(pair[0], 100)))
-    # plot_graph_line(graph, "symulacja")
-    # plot_graph_line(graph_a, "analitycznie")
 
 
 
